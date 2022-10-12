@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navber.css";
+import img3 from "./../Media/img4.png";
 
 const Navber = () => {
   return (
@@ -8,7 +9,8 @@ const Navber = () => {
       <nav className="p-3 bg-gray-50 rounded border-gray-200 dark:bg-gray-800 dark:border-gray-700">
         <div className="container flex flex-wrap justify-between items-center mx-auto py-5">
           <div href="#" className="flex items-center">
-            <span className="self-center text-xl font-bold whitespace-nowrap dark:text-white ">
+            <img src={img3} className="mr-3 h-6 sm:h-10" alt="" />
+            <span className="self-center text-xl font-bold whitespace-nowrap dark:text-white">
               Quiz Contest
             </span>
           </div>
