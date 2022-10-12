@@ -6,12 +6,12 @@ import img1 from "./../Media/img-1.gif";
 const Home = () => {
   return (
     <div>
-      <div className="flex justify-center items-center">
-        <figure className="w-[40%]">
-          <img className="w-full" src={img1} alt="" />
+      <div className="lg:flex justify-center items-center ">
+        <figure className="lg:w-[40%]">
+          <img className="lg:w-full" src={img1} alt="" />
         </figure>
-        <div className="w-[60%] mr-12">
-          <h1 className="text-5xl font-extrabold dark:text-white">
+        <div className="lg:w-[60%]  ml-8 lg:ml-0">
+          <h1 className="lg:text-5xl text-3xl font-extrabold dark:text-white ml-7 lg:ml-0">
             Programming Quiz Contest
           </h1>
           <p className="my-4 text-lg text-gray-500">
