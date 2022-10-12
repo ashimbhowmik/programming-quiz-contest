@@ -9,7 +9,9 @@ const ShowQuiz = ({ quiz }) => {
     <div>
       <div className="p-14 mb-12 shadow-lg rounded-lg">
         <div className="relative flex justify-center items-center mb-6">
-          <h3 className="text-xl  w-[65%] text-center">{question}</h3>
+          <h3 className="lg:text-xl  lg:w-[65%] text-center lg:mr-0 mr-7">
+            {question}
+          </h3>
           <FontAwesomeIcon
             className="absolute right-0 top-0 cursor-pointer"
             icon={faEye}
@@ -20,7 +22,7 @@ const ShowQuiz = ({ quiz }) => {
             }}
           ></FontAwesomeIcon>
         </div>
-        <div className="grid grid-cols-2 gap-6 mb-4">
+        <div className="grid lg:grid-cols-2 gap-6 mb-4">
           <div class="flex items-center border-2 p-5 rounded-lg">
             <input
               id={id}
@@ -31,6 +33,10 @@ const ShowQuiz = ({ quiz }) => {
               onChange={(e) => {
                 if (e.target.value === correctAnswer) {
                   toast.success(correctAnswer, {
+                    theme: "colored",
+                  });
+                } else {
+                  toast.error("Wrong Answer", {
                     theme: "colored",
                   });
                 }
@@ -55,6 +61,10 @@ const ShowQuiz = ({ quiz }) => {
                   toast.success(correctAnswer, {
                     theme: "colored",
                   });
+                } else {
+                  toast.error("Wrong Answer", {
+                    theme: "colored",
+                  });
                 }
               }}
             />
@@ -77,6 +87,10 @@ const ShowQuiz = ({ quiz }) => {
                   toast.success(correctAnswer, {
                     theme: "colored",
                   });
+                } else {
+                  toast.error("Wrong Answer", {
+                    theme: "colored",
+                  });
                 }
               }}
             />
@@ -97,6 +111,10 @@ const ShowQuiz = ({ quiz }) => {
               onChange={(e) => {
                 if (e.target.value === correctAnswer) {
                   toast.success(correctAnswer, {
+                    theme: "colored",
+                  });
+                } else {
+                  toast.error("Wrong Answer", {
                     theme: "colored",
                   });
                 }
