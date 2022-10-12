@@ -9,27 +9,30 @@ const Home = () => {
         <figure className="w-[40%]">
           <img className="w-full" src={img1} alt="" />
         </figure>
-        <div className="w-[60%]">
-          <h2 class="text-4xl font-extrabold dark:text-white">
-            Payments tool for companies
-          </h2>
-          <p class="my-4 text-lg text-gray-500">
-            Start developing with an open-source library of over 450+ UI
-            components, sections, and pages built with the utility classes from
-            Tailwind CSS and designed in Figma.
+        <div className="w-[60%] mr-12">
+          <h1 className="text-5xl font-extrabold dark:text-white">
+            Programming Quiz Contest
+          </h1>
+          <p className="my-4 text-lg text-gray-500">
+            A programming language is a system of notation for writing computer
+            programs.Most programming languages are text-based formal languages,
+            but they may be also be graphical. They are a kind of computer
+            language.
           </p>
-          <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
-            Deliver great service experiences fast - without the complexity of
-            traditional ITSM solutions. Accelerate critical development work,
-            eliminate toil, and deploy changes with ease.
+          <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
+            Programming lenguage : Javascript , Python, Go , Java , Kotlin , PHP
+            , C# , wift , R , Ruby , C and C++ , Matlab , TypeScript , Scala
+          </p>
+          <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
+            Attanded Programming Contest Here...
           </p>
           <Link
-            href="#"
-            class="inline-flex items-center text-lg text-blue-600 dark:text-blue-500 hover:underline"
+            to="/topics"
+            className="inline-flex items-center text-lg text-blue-600 dark:text-blue-500 hover:underline"
           >
-            Read more
+            Quizs
             <svg
-              class="ml-1 w-6 h-6"
+              className="ml-1 w-6 h-6"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
