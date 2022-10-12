@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Quiz = ({ quiz }) => {
   const { name, logo, id } = quiz;
+  //   console.log(quiz);
   return (
     <div className="mx-auto">
       <section className=" p-4 w-[400px] shadow-xl rounded-lg">
