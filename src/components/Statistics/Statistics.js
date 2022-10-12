@@ -7,7 +7,7 @@ const Statistics = () => {
   const quizs = quizData.data;
   return (
     <div className="flex justify-center items-center mt-8 flex-col">
-      <BarChart width={800} height={600} data={quizs}>
+      <BarChart width={400} height={300} data={quizs}>
         <Bar dataKey="total" fill="#8884d8" />
         <XAxis dataKey="name" />
         <YAxis datakey="total" />

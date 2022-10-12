@@ -8,7 +8,7 @@ const Topics = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-2 gap-8 mx-[150px] pt-8">
+      <div className="grid lg:grid-cols-2 gap-8 lg:mx-[150px] mx-5 pt-8">
         {quizs.map((quiz) => (
           <Quiz quiz={quiz} key={quiz.id}></Quiz>
         ))}
