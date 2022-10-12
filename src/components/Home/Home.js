@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Topics from "../Topics/Topics";
 import img1 from "./../Media/img-1.gif";
 
 const Home = () => {
@@ -46,6 +47,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      <Topics></Topics>
     </div>
   );
 };

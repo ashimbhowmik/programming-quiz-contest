@@ -1,6 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "react-toastify/dist/ReactToastify.css";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { toast, ToastContainer } from "react-toastify";
 const ShowQuiz = ({ quiz }) => {
   const { options, question, id, correctAnswer } = quiz;
   return (
@@ -11,6 +13,11 @@ const ShowQuiz = ({ quiz }) => {
           <FontAwesomeIcon
             className="absolute right-0 top-0 cursor-pointer"
             icon={faEye}
+            onClick={() => {
+              toast.success(correctAnswer, {
+                theme: "colored",
+              });
+            }}
           ></FontAwesomeIcon>
         </div>
         <div className="grid grid-cols-2 gap-6 mb-4">
@@ -23,7 +30,9 @@ const ShowQuiz = ({ quiz }) => {
               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               onChange={(e) => {
                 if (e.target.value === correctAnswer) {
-                  alert("aaa");
+                  toast.success(correctAnswer, {
+                    theme: "colored",
+                  });
                 }
               }}
             />
@@ -43,7 +52,9 @@ const ShowQuiz = ({ quiz }) => {
               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               onChange={(e) => {
                 if (e.target.value === correctAnswer) {
-                  alert("aaa");
+                  toast.success(correctAnswer, {
+                    theme: "colored",
+                  });
                 }
               }}
             />
@@ -63,7 +74,9 @@ const ShowQuiz = ({ quiz }) => {
               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               onChange={(e) => {
                 if (e.target.value === correctAnswer) {
-                  alert("aaa");
+                  toast.success(correctAnswer, {
+                    theme: "colored",
+                  });
                 }
               }}
             />
@@ -83,7 +96,9 @@ const ShowQuiz = ({ quiz }) => {
               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               onChange={(e) => {
                 if (e.target.value === correctAnswer) {
-                  alert("aaa");
+                  toast.success(correctAnswer, {
+                    theme: "colored",
+                  });
                 }
               }}
             />
@@ -96,6 +111,7 @@ const ShowQuiz = ({ quiz }) => {
           </div>
         </div>
       </div>
+      <ToastContainer position="top-center" />
     </div>
   );
 };
